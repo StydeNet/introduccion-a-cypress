@@ -36,6 +36,7 @@ const AddressInfo = ({ history }) => {
 
   return (
     <div>
+      {submitted === "error" && <small>Sign up API is offline</small>}
       {submitted === "pending" && <small>loading...</small>}
       {submitted === "successfully" && (
         <Alert.StyledSuccess>
