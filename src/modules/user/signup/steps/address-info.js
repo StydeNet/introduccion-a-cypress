@@ -73,11 +73,16 @@ const AddressInfo = ({ history }) => {
             <Form.StyledErrorMsg>{errors.zipcode.message}</Form.StyledErrorMsg>
           )}
         </Form.StyledField>
-        <Button.StyledSuccess type="button" onClick={backToSecurityInfo}>
+        <Button.StyledSuccess
+          type="button"
+          role="button"
+          onClick={backToSecurityInfo}
+        >
           ← Previous
         </Button.StyledSuccess>
         <Button.StyledSuccess
           type="submit"
+          role="button"
           disabled={Utils.isObjectEmpty(errors)}
         >
           Submit

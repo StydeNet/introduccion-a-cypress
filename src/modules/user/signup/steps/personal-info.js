@@ -57,7 +57,10 @@ const PersonalInfo = ({ history }) => {
             <Form.StyledErrorMsg>{errors.lastName.message}</Form.StyledErrorMsg>
           )}
         </Form.StyledField>
-        <Button.StyledSuccess disabled={Utils.isObjectEmpty(errors)}>
+        <Button.StyledSuccess
+          role="button"
+          disabled={Utils.isObjectEmpty(errors)}
+        >
           Next →
         </Button.StyledSuccess>
       </form>

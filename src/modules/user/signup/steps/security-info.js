@@ -59,10 +59,17 @@ const SecurityInfo = ({ history }) => {
             </Form.StyledErrorMsg>
           )}
         </Form.StyledField>
-        <Button.StyledSuccess type="button" onClick={backToPersonalInfo}>
+        <Button.StyledSuccess
+          type="button"
+          role="button"
+          onClick={backToPersonalInfo}
+        >
           ← Previous
         </Button.StyledSuccess>
-        <Button.StyledSuccess disabled={Utils.isObjectEmpty(errors)}>
+        <Button.StyledSuccess
+          role="button"
+          disabled={Utils.isObjectEmpty(errors)}
+        >
           Next →
         </Button.StyledSuccess>
       </form>
